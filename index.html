@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
 
@@ -20,34 +20,36 @@
     <div class="container-fluid">
       <div class="row">
           <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
-              <a href="#" class="navbar-brand">Logo</a>
+              <a href="#nav" class="navbar-brand">
+                <img id="logo" src="img/logo1.png">
+              </a>
               <button class="navbar-toggler" type="button" data-target="#navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse">
                   <ul class="navbar-nav">
                       <li class="nav-item active">
-                          <a href="#two" class="nav-link">Home</a>
+                          <a href="#" class="nav-link">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#baltic" class="nav-link">Gallery</a>
+                          <a href="#gallery" class="nav-link">Gallery</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#reach" class="nav-link">Map</a>
+                          <a href="#map" class="nav-link">Map</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#reach" class="nav-link">Our houses</a>
+                          <a href="#house" class="nav-link">Our house</a>
                       </li>
-                      <li class="nav-item dropdown">
+                      <!-- <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navdrop" role="button" data-toggle="dropdown" data-hover="dropdown">Info</a>
                           <div class="dropdown-menu" aria-labelledby="navdrop">
                               <a href="#" class="dropdown-item">Service1</a>
                               <a href="#" class="dropdown-item">Service2</a>
                               <a href="#" class="dropdown-item">Service3</a>
                           </div>
-                      </li>
+                      </li> -->
                       <li class="nav-item">
-                          <a href="#" class="nav-link">Contact Us</a>
+                          <a href="#contact" class="nav-link">Contact Us</a>
                       </li>
                   </ul>
               </div>
@@ -66,20 +68,14 @@
     </div>
     
     <div class="row pp">
-      <div class="col-4 gg">
-          <span>Our houses</span>
-          <div class="description">
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p>
-            <p>Mamy dwa domki, ble ble ble...</p> 
+      <div class="col-4 bg1">
+          <h3>Our houses</h3>
+          <div class="description" id="house">
+           <p>Our house is a place where in summer you can hide from the scorching sun. Autumn is perfect for sitting by the fireplace burning sparks. The balance between idyllic decor and modernity is an ideal environment to rest and spend time close to nature. We cordially invite you!</p>
           </div>
 
       </div>
-      <div class="col-8 dd">
+      <div class="col-8 bg3">
             <div id="carouselExampleIndicators" class="carousel slide our" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -116,17 +112,17 @@
     
   
  
-    <div class="ss">
+    <div class="bg2">
       <div class="ss1">
-        <span>Gallery</span>1
+        <h3>Gallery</h3>
         
                    
-                        <h2 id="one"></h2>
+                        <h2 id="gallery"></h2>
                      
                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                   <img class="d-block w-100" src="img/IMG_20181014_141827_HDR.jpg" alt="First slide">
+                                  <img class="d-block w-100" src="img/IMG_20181014_141827_HDR.jpg" alt="First slide">
                                  </div>
                                  <div class="carousel-item">
                                    <img class="d-block w-100" src="img/IMG_20181014_142819_HDR.jpg" alt="Second slide">
@@ -156,7 +152,7 @@
 
 
 
-        <div class="row mapa">
+        <div class="row mapa" id="map">
             
             <iframe src="https://snazzymaps.com/embed/129250" width="100%" height="100%" style="border:none;"></iframe>
 
@@ -173,19 +169,43 @@
             </div>
         </div>
       </div>
-      <div class="row contact">
-        <h3>Contact us</h3>
+      <div class="row contact" id="contact">
+       
+        <div class="col-4">
+         <h3>Contact us!</h3>
+        </div>
+        <div class="col-8">
+          <div>
+            <h3>Have some questions? Need some help ? Call or mail!</h3><br><br><br>
+             <div class="description">
+            <i class="fa fa-envelope-open-o" style="font-size:36px"></i>
+            You can send us an email: birchyhills@gmail.com<br><br><br>
+            <i class="fa fa-book" style="font-size:36px"></i>
+            Want to speak engliss/french? Call Sophia: +48 505527947<br><br><br>
+            <i class="fa fa-book" style="font-size:36px"></i>
+            Want to speak polish: +48 799986713
+            </div>
+          </div>
+        </div>
          
      </div>
       <div class="ddd">
      </div>
 
-            <div class="row footer">      
-                <a href="#top">Main</a>
-                <a href="#contact">Contact Us</a>
-                <a href="#FAQ">FAQ</a>
-            </div>
-          </div>
+     
+      <div class="row footer">
+        <div class="col-sm">
+          <a href="#">Main</a>
+        </div>
+        <div class="col-sm">
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="col-sm">
+          <a href="#FAQ">FAQ</a>
+        </div>
+      
+    </div>
+    </div>
 
     
   
@@ -215,7 +235,7 @@
               </script>
 
             
-                    </script>
+              
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    

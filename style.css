@@ -7,15 +7,27 @@ body{
     margin:0px;
 
 }
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    text-decoration: none;
+}
+
+h3{
+    color: white;
+    font-size: 2rem
+}
+#logo{
+    height: 8vh;
+}
 .someplace{
-    /* background-color: #1D1E2C; */
     background-image: url("img/p_.jpg");
     background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
     background-position: center;
     background-size: 100%;
-    /* margin:0px;  */
+   
 
     
 }
@@ -32,20 +44,20 @@ body{
 
 .description{
     color: #F2AB65;
+    font-size: 1.3rem;
 }
 .font{
     font-family: "Ikaros Sans Regular";
-    /* z-index: 6; */
 
 }
 .mapa{
     height: 50vh
 }
-.gg{
-    background-color: #598234;
+.bg1{
+    background-color: #59656F;
 }
 
-.ss{
+.bg2{
     height: 100%;
     background-color: rgba(104,130,158,0.7);
 
@@ -60,7 +72,7 @@ body{
 }
 
 
-.dd{
+.bg3{
     background-color: #505160;
 }
 .ee{
@@ -106,7 +118,6 @@ body{
     background-image: url("img/20141005_080147.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    /* width: 100vw; */
     height: 100vh;
     text-align: center;
 }
@@ -115,7 +126,6 @@ body{
     background-image: url("img/20160122_152642.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    /* width: 100vw; */
     height: 100vh;
     text-align: center;
 }
@@ -124,7 +134,6 @@ body{
     background-image: url("img/kaszuby-droga-rower.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    /* width: 100vw; */
     height: 100vh;
     text-align: center;
 }
@@ -133,6 +142,8 @@ body{
     height: 400px;
     background-color: grey;
   }
+
+
 @font-face {
     font-family: 'Ikaros Sans Regular';
     src: url("Ikaros-Regular.otf");
@@ -149,22 +160,22 @@ body{
     margin-left: 25%;
    
 }
-/* .map {
-    height: 80vh;
-    margin-top: 10hv;
-    z-index: 10;
-  } */
+/* FOOTER */
+
 .footer{
     background-color: #1D1E2C;
     height: 5vh;
     width: 100%;
-    /* position: fixed; */
     z-index: 2;
     bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
+    color: grey;
+    text-decoration: none
 
 }
+
+
 .pp{
     height: 100%;
 }
@@ -193,10 +204,7 @@ body{
     height:100vh;
     width: 100vw;
 }
-/* #googleMap{
-    width:100%;
-    height:70vh;
-} */
+
 #fotologo{
 height: 100%;
 width: 100%;
@@ -209,6 +217,12 @@ margin-left:0px;
     width:100vw;
     margin-top: 10vh;
 }
+.contact{
+    height: 50vh;
+    background-color:#59656F;
+}
+
+
 .container-fluid{
     box-sizing: border-box;
     background-color:transparent;
@@ -219,24 +233,24 @@ margin-left:0px;
     padding: 0px;
 
 }
-.contact{
-    height: 50vh;
-    background-color:#59656F;
-}
+
 .row{
     margin-right: 0px;
     margin-left: 0px;
 }
+
+
+/* NAVBAR */
+
 .navbar{
 background-color:rgba(34, 34, 34, 0.9);
 width: 100%;
 margin-left: 0px;
 margin-right: 0px;
-/* opacity: 0.7;  */
 font-size: 30px;
 Transition:0.3s all linear;
-
 }
+
 .navbar-dark{
     margin-left: 0px;
     z-index: 5;

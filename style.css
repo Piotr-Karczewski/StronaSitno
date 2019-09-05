@@ -1,11 +1,27 @@
-
 html{
     scroll-behavior: smooth;
 }
 body{
     font-family: 'Happy Monkey', cursive;
     margin:0px;
+}
+.col{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container-fluid{
+    box-sizing: border-box;
+    background-color:transparent;
+    margin-left:0px; 
+    margin-right: 0px;
+    color: #818FAB;
+    font-size: 15px;
+    padding: 0px;
+}
 
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
 }
 a{
     text-decoration: none;
@@ -17,40 +33,18 @@ a:hover{
 
 h3{
     color: white;
-    font-size: 2rem
+    font-size: 2rem;
+    padding: 5%
 }
-#logo{
-    height: 8vh;
-}
-.someplace{
-    background-image: url("img/p_.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-   
 
-    
-}
-.bg-nav{
-    background-color: rgba(0,123,255,0.4);background-color: rgba(0,123,255,0.4);
-}
-.cc{
-    background-color: #fec400;
-}
-.navbar-scroll {
-    background-color: rgba(0,123,255,0.4);
-    transition: top 0.5s;
-}
+
 
 .description{
     color: #F2AB65;
     font-size: 1.3rem;
 }
-.font{
-    font-family: "Ikaros Sans Regular";
 
-}
-.mapa{
+.map{
     height: 50vh
 }
 .bg1{
@@ -60,10 +54,11 @@ h3{
 .bg2{
     height: 100%;
     background-color: rgba(104,130,158,0.7);
-
-
 }
-.ss1{
+.bg3{
+    background-color: #505160;
+}
+.gallery{
     max-height: 100%;
     width: 50%;
     text-align: center;
@@ -71,17 +66,7 @@ h3{
     background-color: transparent;
 }
 
-
-.bg3{
-    background-color: #505160;
-}
-.ee{
-    height: 100%;
-}
-#carouselExampleIndicators{
-    height: 100%;
-}
-.aaa{
+.bg-main{
     position:relative;
     overflow:hidden;
     display:flex;
@@ -94,8 +79,9 @@ h3{
     max-height:100vh;
     min-width:100%;
     color:#eee;
+    padding: 5px
 }
-.aaa::before{
+.bg-main::before{
     content:"";
     width:100%;
     height:100%;
@@ -110,31 +96,32 @@ h3{
     background-attachment:fixed;
     animation: grow 60s  linear 10ms infinite;
     transition:all 0.2s ease-in-out;
-    z-index:-2
+    z-index:-2;
+    padding: 5px;
 }
 
-.bbb{
+.bg-lake{
     background-attachment: fixed;
     background-image: url("img/20141005_080147.jpg");
-    background-size: 100vw 100vh;
+    background-size: auto 130vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
-.ccc{
+.bg-winter{
     background-attachment: fixed;
-    background-image: url("img/20160122_152642.jpg");
-    background-size: 100vw 100vh;
+    background-image: url("img/zimalas.jpg");
+    background-size: auto 130vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
-.ddd{
+.bg-bike{
     background-attachment: fixed;
     background-image: url("img/kaszuby-droga-rower.jpg");
-    background-size: 100vw 100vh;
+    background-size: auto 130vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
 #map {
@@ -143,28 +130,15 @@ h3{
     background-color: grey;
   }
 
-
-@font-face {
-    font-family: 'Ikaros Sans Regular';
-    src: url("Ikaros-Regular.otf");
-  
-    font-weight: normal;
-    font-style: normal;
+#logo{
+    height: 8vh;
 }
 
-.bg{
-    background-color:#59656F ;
-}
-.our{
-    width: 50%;
-    margin-left: 25%;
-   
-}
 /* FOOTER */
 
 .footer{
     background-color: #1D1E2C;
-    height: 5vh;
+    height: 10%;
     width: 100%;
     z-index: 2;
     bottom: 0px;
@@ -176,18 +150,20 @@ h3{
 }
 
 
-.pp{
+.div-house{
     height: 100%;
 }
 #baltic{
     background-attachment: fixed;
     background-image: url("img/baltic_sea.jpg");
-    background-size: 100vw 100vh;
-    width: 100vw;
-    height: 100vh;
+    background-size: auto 130vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
     text-align: center;
-    font-size:60px !important;
-    padding: 40vh;
+    font-size: 5em;
+    /* margin-top: 40vh; */
+    /* padding: 40vh; */
     color: #F2AB65;
     font-weight: 400;
 }
@@ -218,29 +194,26 @@ margin-left:0px;
     margin-top: 10vh;
 }
 .contact{
-    height: 50vh;
+    height: 100%;
     background-color:#59656F;
+    font-size: 2em;
 }
 
 
-.container-fluid{
-    box-sizing: border-box;
-    background-color:transparent;
-    margin-left:0px; 
-    margin-right: 0px;
-    color: #818FAB;
-    font-size: 15px;
-    padding: 0px;
 
-}
-
-.row{
-    margin-right: 0px;
-    margin-left: 0px;
-}
 
 
 /* NAVBAR */
+.bg-nav{
+    background-color: rgba(0,123,255,0.4);
+}
+.nav-hover-bg{
+    background-color: #fec400;
+}
+.navbar-scroll {
+    background-color: rgba(0,123,255,0.4);
+    transition: top 0.5s;
+}
 
 .navbar{
 background-color:rgba(34, 34, 34, 0.9);
@@ -313,6 +286,15 @@ Transition:0.3s all linear;
   100% { left: 40%; opacity: 0; }
 }
 
+@keyframes grow{
+    0% { transform:scale(1)}
+    50% { transform:scale(1.2)}
+  }
+
+
+#carouselExampleIndicators{
+    height: 100%;
+}
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -339,8 +321,19 @@ Transition:0.3s all linear;
   }
 
 
-  @keyframes grow{
-    0% { transform:scale(1)}
-    50% { transform:scale(1.2)}
-  }
 
+
+/* FONT */
+
+  @font-face {
+    font-family: 'Ikaros Sans Regular';
+    src: url("Ikaros-Regular.otf");
+  
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font{
+    font-family: "Ikaros Sans Regular";
+    padding-bottom: 10vh;
+}

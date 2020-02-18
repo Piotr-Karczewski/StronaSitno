@@ -40,7 +40,7 @@ h3{
 
 
 .description{
-    color: #F2AB65;
+    color: rgb(185, 185, 185);
     font-size: 1.3rem;
 }
 
@@ -48,7 +48,7 @@ h3{
     height: 50vh
 }
 .bg1{
-    background-color: #59656F;
+    background-color: rgb(23, 30, 36);
 }
 
 .bg2{
@@ -129,6 +129,13 @@ h3{
     height: 400px;
     background-color: grey;
   }
+#form {
+    min-height: 300px;
+    bottom: 0px;
+}
+.formlets-iframe{
+    border: 0px;
+}
 
 #logo{
     height: 8vh;
@@ -145,7 +152,8 @@ h3{
     margin-right: 0px;
     margin-left: 0px;
     color: grey;
-    text-decoration: none
+    text-decoration: none;
+    text-align: center;
 
 }
 
@@ -200,9 +208,6 @@ margin-left:0px;
 }
 
 
-
-
-
 /* NAVBAR */
 .bg-nav{
     background-color: rgba(0,123,255,0.4);
@@ -246,8 +251,9 @@ Transition:0.3s all linear;
 	position: absolute;
     display: block;
 	top: 2em;
-    width: 60%;
-    margin-top: 30vh;
+    width: 100%;
+    margin-top: 10vh;
+    padding: 2vh;
   
   font-size: 4em;
   color: white;
@@ -270,19 +276,19 @@ Transition:0.3s all linear;
 
 @keyframes anim-1 {
 	0%, 8.3% { left: 0%; opacity: 0; }
-  8.3%,25% { left: 25%; opacity: 1; }
+  8.3%,25% { left: 15%; opacity: 1; }
   33.33%, 100% { left: 40%; opacity: 0; }
 }
 
 @keyframes anim-2 {
 	0%, 33.33% { left: 0%; opacity: 0; }
-  41.63%, 58.29% { left: 25%; opacity: 1; }
+  41.63%, 58.29% { left: 15%; opacity: 1; }
   66.66%, 100% { left: 40%; opacity: 0; }
 }
 
 @keyframes anim-3 {
 	0%, 66.66% { left: 0%; opacity: 0; }
-  74.96%, 91.62% { left: 25%; opacity: 1; }
+  74.96%, 91.62% { left: 15%; opacity: 1; }
   100% { left: 40%; opacity: 0; }
 }
 

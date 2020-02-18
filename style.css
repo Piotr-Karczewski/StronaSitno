@@ -42,6 +42,7 @@ h3{
 .description{
     color: rgb(185, 185, 185);
     font-size: 1.3rem;
+    margin-top: 10vh;
 }
 
 .map{
@@ -129,15 +130,8 @@ h3{
     height: 400px;
     background-color: grey;
   }
-#form {
-    min-height: 300px;
-    bottom: 0px;
-}
-.formlets-iframe{
-    border: 0px;
-}
-
-#logo{
+  
+  #logo{
     height: 8vh;
 }
 
@@ -154,7 +148,7 @@ h3{
     color: grey;
     text-decoration: none;
     text-align: center;
-
+    
 }
 
 
@@ -190,23 +184,32 @@ h3{
 }
 
 #fotologo{
-height: 100%;
-width: 100%;
-background-color:#59656F;
-opacity: 0.8;
-margin-left:0px;
+    height: 100%;
+    width: 100%;
+    background-color:#59656F;
+    opacity: 0.8;
+    margin-left:0px;
 }
 #mapContainer{
     height: 90vh;
     width:100vw;
     margin-top: 10vh;
 }
+
+/*CONTACT*/
+
 .contact{
     height: 100%;
     background-color:#59656F;
     font-size: 2em;
 }
-
+#form {
+    min-height: 300px;
+    bottom: 0px;
+}
+.formlets-iframe{
+    border: 0px;
+}
 
 /* NAVBAR */
 .bg-nav{
